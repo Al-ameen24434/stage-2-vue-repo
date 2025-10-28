@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: rgb(59, 130, 246);
+  --destructive: rgb(239, 68, 68);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  @apply px-6 py-2.5 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800;
+}
+
+.btn-secondary {
+  @apply border border-gray-300 text-gray-700 hover:bg-gray-50 active:bg-gray-100;
+}
+
+.btn-ghost {
+  @apply text-gray-700 hover:bg-gray-100 active:bg-gray-200;
+}
+
+.btn-destructive {
+  @apply bg-red-600 text-white hover:bg-red-700 active:bg-red-800;
+}
+
+.input {
+  @apply w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.card {
+  @apply bg-white border border-gray-200 rounded-xl shadow-md;
+}
+
+.card:hover {
+  @apply shadow-lg;
+}
